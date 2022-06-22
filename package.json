@@ -1,0 +1,26 @@
+{
+  "name": "@web-alchemy/eleventy-plugin-nunjucks-component",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/web-alchemy/eleventy-plugin-nunjucks-component.git"
+  },
+  "bugs": {
+    "url": "https://github.com/web-alchemy/eleventy-plugin-nunjucks-component/issues"
+  },
+  "homepage": "https://github.com/web-alchemy/eleventy-plugin-nunjucks-component",
+  "main": ".eleventy.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "postpublish": "git push origin --all; git push origin --tags",
+    "postversion": "npm publish",
+    "preversion": "npm test",
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "peerDependencies": {
+    "@11ty/eleventy": "*",
+    "nunjucks": "*"
+  }
+}
