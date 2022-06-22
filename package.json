@@ -1,6 +1,6 @@
 {
   "name": "@web-alchemy/eleventy-plugin-nunjucks-component",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/web-alchemy/eleventy-plugin-nunjucks-component.git"
