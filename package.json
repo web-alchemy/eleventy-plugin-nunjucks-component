@@ -22,5 +22,12 @@
   "peerDependencies": {
     "@11ty/eleventy": "*",
     "nunjucks": "*"
-  }
+  },
+  "keywords": [
+    "eleventy",
+    "eleventy-plugin",
+    "nunjucks",
+    "component",
+    "slot"
+  ]
 }
