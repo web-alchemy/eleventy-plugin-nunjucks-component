@@ -15,8 +15,20 @@ const EleventyPluginNunjucksComponent = require('@web-alchemy/eleventy-plugin-nu
 
 module.exports = (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyPluginNunjucksComponent, {
-    tagName: 'component' // default is `component`,
-    pathToComponents: (componentName) => `src/components/${componentName}.njk` // string or function `(componentName) => 'path'`. Default is current working directory. If `pathToComponents` is a function, then it should return the full path to the component using its `ComponentName` argument. If `pathToComponents` is a string, then it should contain the base path of the components folder, which will then be concatenate with `ComponentName` and the extension `.njk'.
+    /* default is `component` */
+    tagName: 'component',
+    
+    /* 
+      String or function `(componentName) => 'path'`.
+      Default is current working directory. 
+
+      If `pathToComponents` is a function, then it should return the full path 
+      to the component using its `ComponentName` argument. 
+      If `pathToComponents` is a string, then it should contain the base path 
+      of the components folder, which will then be concatenate 
+      with `ComponentName` and the extension `.njk'.
+    */
+    pathToComponents: (componentName) => `src/components/${componentName}.njk`
   })
 }
 ```
@@ -76,3 +88,5 @@ Use component inside main template file
 Component tag has two attributes:
 1. First - component name
 2. Second - object with variables, which will be available inside component template as globals
+
+Component blocks (slots) work same as layout blocks. You can use default slot content via `super()`.
