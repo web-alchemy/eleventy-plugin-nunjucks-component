@@ -36,7 +36,7 @@ module.exports = (eleventyConfig) {
 Define component markup inside your components folder (for example, 'src/components/modal.njk'):
 
 ```nunjucks
-<modal class="modal {{ class if class }}" id="{{ id }}">
+<div class="modal {{ class if class }}" id="{{ id }}">
   <h2 class="modal__title">
     {% block header %}
     {% endblock %}    
@@ -51,7 +51,7 @@ Define component markup inside your components folder (for example, 'src/compone
     {% block footer %}
     {% endblock %}
   </div>   
-</modal>
+</div>
 ```
 
 Use component inside main template file
